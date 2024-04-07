@@ -706,6 +706,10 @@ video {
   gap: 2rem;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -930,5 +934,13 @@ video {
   .lg\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  @media (min-width: 1024px) {
+    .xl\:lg\:col-span-1 {
+      grid-column: span 1 / span 1;
+    }
   }
 }
